@@ -2,9 +2,13 @@
 Single Image Super-Resolution using Deep Learning(for an academic project)
 
 Environment Config:
+
 OS: Windows 10
+
 Python Version: 3.9
+
 TensorFlow Version: 2.4
+
 CUDA Version: 11.2
 
 

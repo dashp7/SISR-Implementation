@@ -13,3 +13,6 @@ Instructions for Execution:
 1. Fill up the folders DIV2K_train/train and DIV2K_test/test with the training and test images respectively.
 2. python [MODEL_NAME_final].py
 3. Results will be saved in the base directory
+
+Sincerely,
+Priyabrat

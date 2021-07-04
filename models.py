@@ -15,7 +15,7 @@ from tensorflow.keras.preprocessing import image_dataset_from_directory
 Glorot = keras.initializers.GlorotUniform(seed=1875)
 
 
-def ESPCN(sr_factor=3, channels=1):
+def ESPCN(sr_factor=4, channels=1):
     inputs = keras.Input(shape=(None, None, channels))
     x = layers.Conv2D(64, 5, activation= "relu",kernel_initializer=Glorot,padding="same")(inputs)
     x = layers.Conv2D(64, 3, activation= "relu",kernel_initializer=Glorot,padding="same")(x)
@@ -53,7 +53,7 @@ def res_edsr(inp, filters):
     x = layers.Add()([inp, x])
     return x
 
-
+#Added a new line here
 
 def SR_RESNET(sr_factor, channels=1, res_blocks=8):
     inputs = keras.Input(shape=(None, None, channels))

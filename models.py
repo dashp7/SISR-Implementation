@@ -68,6 +68,8 @@ def SR_RESNET(sr_factor, channels=1, res_blocks=8):
     
     return keras.Model(inputs, outputs, name="SR-RESNET")
 
+def SRGAN(sr_factor, channels=1, res_blocks=8):
+		pass
 
 def res_block(inp, filters):
     x = layers.Conv2D(filters, 3, activation= "relu",kernel_initializer=Glorot,padding="same")(inp)
